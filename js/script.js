@@ -47,7 +47,7 @@ function textoCriptografar() {
 
 
 //descriptografar
-function textoDescodificar() {
+function textodescriptografar() {
     let decodificar = criptografar.value
         .replaceAll('enter', 'e')
         .replaceAll('imes', 'i')
