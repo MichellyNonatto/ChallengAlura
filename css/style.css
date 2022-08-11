@@ -37,7 +37,7 @@ textarea {
 .write {
     width: 60%;
     height: auto;
-    margin: 20px 40px 0 190px;
+   margin: 20px 40px 0 140px;
 }
 
 .information {
@@ -191,4 +191,70 @@ footer i {
 
 #maxCaracter{
     font-weight: 600;
+}
+
+@media (max-width:770px) {
+
+    html {
+        font-size: 70%;
+    }
+    
+    textarea::placeholder{
+        font-size: 70%;
+    }
+    .write {
+       margin-left: 40px;
+    }
+    
+
+}
+
+@media (max-width:425px){
+    
+    section{
+        display: block;
+    }
+
+    .write{
+        width: 90%;
+        margin: 1rem 2rem 0 2rem;
+    }
+
+    .write p{
+        font-size: 10px;
+       
+    }
+
+    .camp_white{
+        margin-top: 5rem;
+        width: 90%;
+       
+    }
+
+    #text{
+        margin-right: 0;
+    }
+
+    #camp_text::placeholder{
+        background-size: 80%;
+    }
+
+    nav{
+        width: 100%;
+        align-items: center;
+        align-content: center;
+        text-align: center;
+        margin: 3rem 0;
+    }
+
+}
+
+
+::-webkit-scrollbar {
+    width: .5rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--backgroundConposition);
+    border-radius: .5rem;
 }
