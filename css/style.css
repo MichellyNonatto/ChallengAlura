@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap');
+
+:root{
+    --background:#191828;
+    --backgroundConposition: #141325;
+    --conposition: #c75eec;
+    --font:#fff;
+    --fontConposition:#eee;
+    --orange:#f6543b;
+    --yellow:#fac900;
+}
+
+* {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+html {
+    background-color: var(--background);
+}
+
+nav {
+    margin: 20px 0 0 40px;
+}
+
+section {
+    display: flex;
+    justify-content: space-between;
+}
+
+textarea {
+    resize: none;
+    padding: 1em 1em 0 1em;
+}
+
+.write {
+    width: 60%;
+    height: auto;
+    margin: 20px 40px 0 190px;
+}
+
+.information {
+    display: flex;
+    color: var(--fontConposition);
+    opacity: 0.8;
+}
+
+.information img {
+    margin-right: 1rem;
+}
+
+#camp_write {
+    background-color: var(--background);
+    border: none;
+    margin-bottom: 1rem;
+    height: 25rem;
+    width: 80%;
+    color:var(--conposition);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+#camp_write:focus {
+    font-size: 25px;
+    color: var(--conposition);
+    outline: 2px solid var(--conposition);
+    border-radius: 10px;
+}
+
+#camp_write::placeholder {
+    color: var(--conposition);
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.button {
+    background-color: var(--conposition);
+    color: var(--fontConposition);
+    border: var(--conposition) solid 1px;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: 15px;
+    font-weight: 600;
+    width: 40%;
+    align-items: center;
+    transition: .5s linear;
+    cursor: pointer;
+    margin: 1rem 0 0 0;
+}
+
+#criptografar {
+    margin-right: 1rem;
+}
+
+.button:hover {
+    background-color: var(--backgroundConposition);
+    color: var(--conposition);
+}
+
+
+.camp_white {
+    width: 30%;
+    text-align: center;
+    background-color: var(--backgroundConposition);
+    border-radius: 25px;
+    padding: 60px 1rem 0 1rem;
+    margin-right: 40px;
+}
+
+.camp_white img {
+    width: 80%;
+    height: auto;
+}
+
+.camp_white h3 {
+    margin-top: 5rem;
+    color: var(--fontConposition);
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.camp_white h4 {
+    color: var(--fontConposition);
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#text {
+    display: none;
+    height: 33.5rem;
+}
+
+#camp_text {
+    background-color:var(--backgroundConposition);
+    border: none;
+    margin-bottom: 1rem;
+    width: 80%;
+    height: 80%;
+    color:var(--font);
+    font-size: 20px;
+}
+
+#camp_text:focus {
+    outline: none;
+}
+
+#camp_text::placeholder {
+    color: var(--fontConposition);
+    text-align: center;
+    height: 100%;
+    font-weight: 600;
+    background: url(/img/search.svg) no-repeat center top 10rem;
+    background-size: 120%;
+}
+
+.button_copiar {
+    background-color: var(--backgroundConposition);
+    border: var(--conposition) solid 1px;
+    width: 15rem;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    margin:0;
+    color: var(--conposition);
+}
+
+.button_copiar:hover {
+    color: var(--font);
+    background-color: var(--conposition);
+}
+
+footer,
+h2,
+span {
+    width: 100%;
+    text-align: center;
+    margin: 80px 0 0 0;
+    padding-bottom: 10px;
+    color:var(--font);
+}
+
+footer i {
+    font-size: 25px;
+    color: var(--fontConposition);
+    padding-left: 1rem;
+}
+
+.name {
+    color: var(--conposition);
+    font-weight: 600;
+}
+
+#maxCaracter{
+    font-weight: 600;
+}
