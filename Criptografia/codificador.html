@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Michelly">
+    <title>Challenge | Alura</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="shortcut icon" href="../img/alura_icon_aba.jpg" type="image/x-icon">
+    <script src="https://kit.fontawesome.com/0eb9d79b15.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav>
+        <img src="img/alura-img.svg" alt="é a letra 'a' representando a logo da Alura." height="50px">
+    </nav>
+
+    <section>
+
+        <div class="write">
+            <textarea id="camp_write" placeholder="Digite um texto..." autofocus required="required"
+                maxlength="400"></textarea>
+            <br>
+
+            <div class="information">
+                <img src="img/atention_icon.svg" alt="atenção">
+                <p>Apenas letras mínusculas e sem acento. Máximo de caracter <span id="maxCaracter">400</span></p>
+            </div>
+
+            <input type="button" value="criptografar" id="criptografar" class="button" tabindex="1" onclick="desativar(), textoCriptografar ()">
+            <input type="button" value="descodificar" id="descodificar" class="button" onclick="textoDescodificar()">
+
+        </div>
+
+        <div id="text" class="camp_white">
+            <textarea id="camp_text" placeholder="Nenhuma mensagem encontrada"></textarea>
+            <input type="submit" class="button_copiar button" value="copiar" onclick="copiar()">
+        </div>
+
+        <div class="camp_white" id="image">
+            <img src="/img/tresure.svg" alt="personagem segurando uma pá ao lado de um baú.">
+            <h3>Nenhuma mensagem encontrada</h3>
+            <h4>Digite um texto que você deseja criptografar ou descodificar</h4>
+        </div>
+
+    </section>
+    <footer>
+        <h2>&copy Desenvolvido por <span class="name">Michelly Nonato</span> com o apoio da plataforma <span
+                class="name">Alura</span></h2>
+        <a href="https://www.linkedin.com/in/michelly-nonato/" target="_blank"> <i class="fa-brands fa-linkedin"
+                title="Linkedin"></i></a>
+        <a href="https://github.com/MichellyNonatto" target="_blank"> <i class="fa-brands fa-github"
+                title="GitHub"></i></a>
+    </footer>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
