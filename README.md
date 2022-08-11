@@ -6,6 +6,6 @@
   
   <p>Apresento o desafio proposto pela alura, a criação de um decodificardor, um site que você digita um texto que queira criptografar e o retorna criptografado, você pode descriptografar também</p>
   <p>Aproveite e visite esse projeto</p>
-  <a href="https://michellynonatto.github.io/ChallengeAlura/" target="_blank">Challange | Alura</a>
+  <a href="https://michellynonatto.github.io/Decodificador/" target="_blank">Challange | Alura</a>
   <br>
 </div>
