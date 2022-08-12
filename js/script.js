@@ -6,9 +6,9 @@ var campoTexto = document.getElementById("camp_text");
 let elementInline = document.getElementById("text");
 let elementeNone = document.getElementById("image");
 
+const btnCopiar = document.getElementById("copiaText")
 
 //validação caracter especial e caixa alta
-
 criptografar.addEventListener('keypress', function (e) {
 
     if (!checkChar(e)) {
@@ -23,7 +23,6 @@ function checkChar(e) {
     const letra = '[a-z ]';
 
     if (char.match(letra)) {
-        console.log(e.keyCode);
         return true;
     }
 }
@@ -38,7 +37,6 @@ function textoCriptografar() {
         .replaceAll('i', 'imes')
         .replaceAll('o', 'ober')
         .replaceAll('u', 'ufat');
-    console.log(criptografia);
 
     campoTexto.innerHTML = criptografia;
 
@@ -54,7 +52,6 @@ function textodescriptografar() {
         .replaceAll('ai', 'a')
         .replaceAll('ober', 'o')
         .replaceAll('ufat', 'u');
-    console.log(decodificar);
 
     campoTexto.innerHTML = decodificar;
 
@@ -63,16 +60,14 @@ function textodescriptografar() {
 
 
 //área de transferência
-function copiar() {
-    let textoCopiado = document.querySelector("#camp_text");
-    textoCopiado.select();
+btnCopiar.addEventListener('click', (texto) => {
+    texto.preventDefault();
 
-    textoCopiado.select();
-    textoCopiado.setSelectionRange(0, 400);
-    document.execCommand("copy");
+    navigator.clipboard.writeText(campoTexto.value);
+    console.log('Texto copiado para área de transferência! Ctrl+V em algum local para colar');
 
-    criptografar.value = textoCopiado.value;
-}
+    criptografar.value = campoTexto.value;
+});
 
 
 //modificação no css
