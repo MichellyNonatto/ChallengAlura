@@ -8,4 +8,8 @@
   <p>Aproveite e visite esse projeto</p>
   <a href="https://michellynonatto.github.io/Decodificador/" target="_blank">Challange | Alura</a>
   <br>
+  
+  <img align="center" title="Java" alt="Michelly-Java" height="auto" width="400" src="https://user-images.githubusercontent.com/101263547/184448998-2e4c6cce-ca33-4007-a379-f64677591bc3.png" />
+
+  
 </div>
